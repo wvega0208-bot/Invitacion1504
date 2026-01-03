@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mis 15 Años - Ana Elena</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(180deg,#efe9fb,#ffffff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.container{
+  max-width:420px;
+  background:#ffffff;
+  border-radius:24px;
+  padding:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,.18);
+  animation:fadeIn 1.6s ease;
+}
+
+img{
+  width:100%;
+  border-radius:18px;
+}
+
+.music{
+  margin:14px 0;
+  text-align:center;
+  color:#7f5cc8;
+}
+
+a.link{
+  color:#7f5cc8;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  margin-top:12px;
+  border:none;
+  border-radius:30px;
+  background:#9a79d8;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#7f5cc8;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(25px);}
+  to{opacity:1; transform:translateY(0);}
+}
+/* BLOQUE VESTIMENTA */
+.vestimenta {
+  margin: 16px 0;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f3e8ff;
+  text-align: center;
+  color: #6b21a8;
+  font-size: 14px;
+}
+
+/* TÍTULO */
+.vestimenta-titulo {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* TEXTO */
+.vestimenta-texto {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* LISTA DE COLORES */
+.colores {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #444;
+}
+
+/* CÍRCULOS DE COLOR */
+.circulo {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circulo.verde {
+  background: #065f46; /* verde oscuro / esmeralda */
+}
+
+.circulo.morado {
+  background: #6b21a8;
+}
+
+.circulo.lila {
+  background: #7c3aed; /* lila azulado */
+}
+
+/* ANIMACIÓN SUAVE */
+.animar {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Imagen principal -->
+  <img src="Invitacion1504.png" alt="Mis 15 Años Ana Elena">
+
+  <!-- Música instrumental moderna -->
+  <div class="music">
+    🎶 Música instrumental
+    <audio controls autoplay loop>
+      <source src="musica-instrumental-moderna.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Ubicación -->
+  <p style="text-align:center;">
+    📍
+    <a class="link" target="_blank"
+       href="https://www.google.com/maps/place/Finca+Sanchez/@10.0029056,-84.0101762,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa0e6732bbe7b05:0x43008c192a8eb4e9!8m2!3d10.0029003!4d-84.0076013!16s%2Fg%2F11ck6k15wq">
+      Finca Sánchez Plataneres de Moravia
+    </a>
+  </p>
+
+  <!-- Botones -->
+  <button onclick="window.open('https://wa.me/50688243576')">
+    💬 Confirmar asistencia
+  </button>
+
+  <button onclick="window.open('https://www.google.com/maps/place/Finca+Sanchez/@10.0029056,-84.0101762,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa0e6732bbe7b05:0x43008c192a8eb4e9!8m2!3d10.0029003!4d-84.0076013!16s%2Fg%2F11ck6k15wq')">
+    📍 Ver ubicación
+  </button>
+<div class="vestimenta animar">
+  <div class="vestimenta-titulo">
+    👗🎩 <strong>Código de vestimenta:</strong> Formal
+  </div>
+
+  <div class="vestimenta-texto">
+    Agradecemos evitar los colores:
+  </div>
+
+  <div class="colores">
+    <span class="color-item">
+      <span class="circulo verde"></span>
+      Verde oscuro / Esmeralda
+    </span>
+
+    <span class="color-item">
+      <span class="circulo morado"></span>
+      Morado
+    </span>
+
+    <span class="color-item">
+      <span class="circulo lila"></span>
+      Lila azulado
+    </span>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
